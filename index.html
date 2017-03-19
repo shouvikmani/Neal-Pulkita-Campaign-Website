@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Neal & Pulkita 2018</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.0.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom styles -->
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <img id="banner" src="static/banner.jpg">
+
+      <div id="content">
+          <div id="story">
+              <h1 class="section-heading">Our Story</h1>
+
+              <div id="neal-story">
+                  <p class="about-me-heading lead">Hi, I'm Neal Choudhary.</p>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              </div>
+
+              <img id="story-image" src="static/our-story-1.svg">
+
+              <div id="pulkita-story">
+                  <p class="about-me-heading lead">And I'm Pulkita Dua.</p>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+              </div>
+          </div>
+
+          <br>
+          <hr>
+
+          <div id="promise">
+              <h1 class="section-heading">Our Promise</h1>
+              <p id="sub-heading" class="lead">Here are our ideas to improve the CMU experience</p>
+              <br><br>
+
+              <div id="promise-images-block">
+                  <div class="promise-images" onmouseover=show_promise_block("fiscal-transformation")>
+                      <img id="fiscal-transformation-image" src="static/fiscal.png">
+                      <p>Fiscal Transformation</p>
+                  </div>
+                  <div class="promise-images" onmouseover=show_promise_block("collaboration")>
+                      <img id="collaboration-image" src="static/collaboration.png">
+                      <p>Collaboration</p>
+                  </div>
+                  <div class="promise-images" onmouseover=show_promise_block("mental-health-and-wellness")>
+                      <img id="mental-health-and-wellness-image" src="static/mental-health.png">
+                      <p>Mental Health & Wellness</p>
+                  </div>
+                  <div class="promise-images">
+                      <img id="diversity-image" src="static/diversity.png" onmouseover=show_promise_block("diversity")>
+                      <p>Diversity</p>
+                  </div>
+              </div>
+
+              <div class="selected-promise-block">
+
+              </div>
+
+              <div class="promise-block" id="fiscal-transformation">
+                  <h3 class="promise-heading">Fiscal Transformation</h3>
+                  <ul class="promise-content">
+                      <li><p class="lead">Collaborate with Student Government to make finances more transparent</p></li>
+                      <li><p class="lead">Digitize financial processes for organizations</p></li>
+                      <li><p class="lead">Save organizations time with the financial workflow and allow them to focus more on their initiatives</p></li>
+                  </ul>
+                  <img class="promise-video-placeholder" src="static/video-placeholder.png">
+              </div>
+
+              <div class="promise-block" id="collaboration">
+                  <h3 class="promise-heading">Collaboration</h3>
+                  <ul class="promise-content">
+                      <li><p class="lead">Spearhead the One CMU initiative - focus on reducing the department specific mindset and replacing it with a collaborative CMU spirit</p></li>
+                      <li><p class="lead">Advocate for collaboration across different academic departments and majors. E.g. combine redundant department events into one larger event</p></li>
+                      <li><p class="lead">Hold mixers between students of all majors</p></li>
+                  </ul>
+                  <img class="promise-video-placeholder" src="static/video-placeholder.png">
+              </div>
+
+              <div class="promise-block" id="mental-health-and-wellness">
+                  <h3 class="promise-heading">Mental Health and Wellness</h3>
+                  <ul class="promise-content">
+                      <li><p class="lead">Support the administration to revamp mental health policies to be more supportive of students</p></li>
+                      <li><p class="lead">Collaborate with Division Affairs to ensure greater utilization of CAPS</p></li>
+                      <li><p class="lead">Work with SLICE, Senate, GSA, and CMU Task Force to promote a healthy culture at CMU</p></li>
+                  </ul>
+                  <img class="promise-video-placeholder" src="static/video-placeholder.png">
+              </div>
+
+              <div class="promise-block" id="diversity">
+                  <h3 class="promise-heading">Diversity</h3>
+                  <ul class="promise-content">
+                      <li><p class="lead">Strive to ensure that the Carnegie Mellon community is one that is welcoming to students of all backgrounds regardless of race, gender, gender identification, sexual orientation, etc.</p></li>
+                      <li><p class="lead">Work with the university to go beyond just aiding diverse candidates to get their foot in the door</p></li>
+                  </ul>
+                  <img class="promise-video-placeholder" src="static/video-placeholder.png">
+              </div>
+          </div>
+
+          <br>
+          <hr>
+
+      </div>
+
+      <div id="endorse">
+
+      </div>
+  </body>
+
+  <script type="text/javascript">
+      function show_promise_block(promise) {
+          $("img").css("border", "none");
+          $("#" + promise + "-image").css("border", "4px solid #B22222")
+                                    .css("border-radius", "75px");
+          $(".promise-block").hide();
+          $("#" + promise).show();
+      }
+
+      // Run on page load
+      $( document ).ready(function() {
+          // Show Fiscal Transformation promise block by default
+          show_promise_block("fiscal-transformation");
+      });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: helvetica;
+}
+
+.lead {
+    margin-bottom: 0px;
+}
+
+#banner {
+    height: 80%;
+    width: 100%;
+}
+
+#content {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#story {
+    color: #273660; }
+    #story #neal-story {
+        width: 30%;
+        float: left;
+        clear: right; }
+    #story #story-image {
+        width: 30%;
+        max-height: 420px;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left; }
+    #story #pulkita-story {
+        width: 30%;
+        display: block;
+        overflow: hidden; }
+    #story .about-me-heading {
+        font-size: 30px;
+        margin-bottom: 5px; }
+
+#promise {
+    color: #273660; }
+    #promise #sub-heading {
+        margin-top: -10px; }
+    #promise #promise-images-block {
+        text-align: center; }
+        #promise #promise-images-block .promise-images {
+            display:inline-block;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            cursor: pointer; }
+        #promise #promise-images-block .promise-images img {
+            width: 150px;
+            margin-bottom: 15px; }
+        #promise #promise-images-block .promise-images p {
+            font-size: 20px; }
+    #promise .promise-block {
+        display: none;
+    }
+    #promise .promise-block .promise-heading {
+        text-align: center; }
+    #promise .promise-block .promise-content {
+        width: 70%;
+        float: left; }
+    #promise .promise-block .promise-video-placeholder {
+        width: 25%;
+        margin-left: 5%;
+    }
