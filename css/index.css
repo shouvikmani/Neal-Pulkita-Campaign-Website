@@ -31,16 +31,22 @@ body {
 #story {
     color: #273660; }
     #story #neal-story {
-        width: 30%;
-        float: left; }
-    #story #story-image {
-        width: 30%;
-        max-height: 420px;
+        width: 70%;
+        float: left;
+        margin-bottom: 20px; }
+    #story #neal-image {
+        width: 20%;
         margin-left: 5%;
+        margin-bottom: 20px; }
+    #story #pulkita-image {
+        width: 20%;
         margin-right: 5%;
-        float: left; }
+        float: left;
+        clear: left;
+        margin-bottom: 40px; }
     #story #pulkita-story {
-        width: 30%;
+        width: 70%;
+        margin-bottom: 40px;
         display: block;
         overflow: hidden; }
     #story .about-me-heading {
