@@ -37,10 +37,12 @@ body {
         margin-bottom: 20px; }
     #story #neal-image {
         width: 20%;
+        margin-top: 8px;
         margin-left: 5%;
         margin-bottom: 20px; }
     #story #pulkita-image {
         width: 20%;
+        margin-top: 8px;
         margin-right: 5%;
         float: left;
         clear: left;
@@ -53,6 +55,9 @@ body {
     #story .about-me-heading {
         font-size: 30px;
         margin-bottom: 5px; }
+    #story .about-me-text {
+        font-size: 18px;
+    }
 
 #promise {
     color: #273660; }
