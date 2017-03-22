@@ -31,33 +31,57 @@ body {
 
 #story {
     color: #273660; }
+    #story .about-me-heading {
+        font-size: 30px;
+        margin-bottom: 5px; }
+    #story .about-me-text {
+        font-size: 18px; }
     #story #neal-story {
-        width: 70%;
-        float: left;
-        margin-bottom: 20px; }
+        float: right;
+        margin-bottom: 30px; }
     #story #neal-image {
+        width: 60%;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+    #story #pulkita-image {
+        width: 60%;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+    #story #pulkita-story {
+        margin-bottom: 40px;
+    }
+
+
+/* Larger screens */
+@media (min-width: 750px) {
+    #story #neal-story {
+        width: 75%;
+        float: left;
+        margin-bottom: 40px; }
+    #story #neal-image {
+        float: right;
         width: 20%;
         margin-top: 8px;
-        margin-left: 5%;
         margin-bottom: 20px; }
     #story #pulkita-image {
         width: 20%;
         margin-top: 8px;
         margin-right: 5%;
         float: left;
-        clear: left;
+        clear: both;
         margin-bottom: 40px; }
     #story #pulkita-story {
         width: 70%;
         margin-bottom: 40px;
         display: block;
-        overflow: hidden; }
-    #story .about-me-heading {
-        font-size: 30px;
-        margin-bottom: 5px; }
-    #story .about-me-text {
-        font-size: 18px;
+        overflow: hidden;
     }
+}
 
 #promise {
     color: #273660; }
@@ -72,15 +96,24 @@ body {
             margin-bottom: 10px;
             cursor: pointer; }
         #promise #promise-images-block .promise-images img {
-            width: 150px;
+            width: 80px;
             margin-bottom: 15px; }
         #promise #promise-images-block .promise-images p {
-            font-size: 20px; }
+            font-size: 12px; }
     #promise .promise-block {
         display: none;
     }
     #promise .promise-block .promise-heading {
         text-align: center; }
+
+/* Larger screens */
+@media (min-width: 750px) {
+    #promise #promise-images-block .promise-images img {
+        width: 150px;
+        margin-bottom: 15px; }
+    #promise #promise-images-block .promise-images p {
+        font-size: 20px; }
+}
 
 #connect {
     color: #273660; }
